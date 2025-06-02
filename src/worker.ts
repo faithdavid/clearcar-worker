@@ -51,21 +51,21 @@ export default {
         throw new Error('XML does not exist');
       }
 
-      let obj = _xml.adf.prospect[0];
-      let vehicle = obj.vehicle[0];
-      let contact = obj.customer[0].contact[0];
-      let _address = contact.address[0];
+      let obj = _xml.adf.prospect?.[0];
+      let vehicle = obj.vehicle?.[0];
+      let contact = obj.customer?.[0]?.contact?.[0];
+      let _address = contact.address?.[0];
       let address = {} as any;
 
       Object.keys(_address).forEach((key) => {
         if (key === '$') {
           address.type = _address.$.type;
         } else if (typeof _address[key].length === 'number') {
-          address[key] = _address[key][0];
+          address[key] = _address[key]?.[0];
         }
       });
 
-      let _colorCombination = vehicle.colorcombination[0];
+      let _colorCombination = vehicle.colorcombination?.[0];
 
       let colorCombination = {} as any;
 
@@ -75,39 +75,39 @@ export default {
       });
 
       let prospect = {} as any;
-      prospect.id = obj.id[0]._;
+      prospect.id = obj.id?.[0]?._;
 
-      prospect.requestDate = obj.requestdate[0];
+      prospect.requestDate = obj.requestdate?.[0];
 
       prospect.vehicle = {
-        id: vehicle.id[0],
+        id: vehicle.id?.[0],
         interest: vehicle.$.interest,
         status: vehicle.$.status,
-        year: vehicle.year[0],
-        make: vehicle.make[0],
-        model: vehicle.model[0],
-        vin: vehicle.vin[0],
-        trim: vehicle.trim[0],
+        year: vehicle.year?.[0],
+        make: vehicle.make?.[0],
+        model: vehicle.model?.[0],
+        vin: vehicle.vin?.[0],
+        trim: vehicle.trim?.[0],
         odometer: {
-          mileage: vehicle.odometer[0]._,
-          isInMiles: vehicle.odometer[0].$.units === 'mi',
+          mileage: vehicle.odometer?.[0]?._,
+          isInMiles: vehicle.odometer?.[0]?.$.units === 'mi',
         },
         price: {
-          value: vehicle.price[0]._,
-          isInUsd: vehicle.price[0].$.currency === 'USD',
-          type: vehicle.price[0].$.type,
+          value: vehicle.price?.[0]?._,
+          isInUsd: vehicle.price?.[0]?.$.currency === 'USD',
+          type: vehicle.price?.[0]?.$.type,
         },
         colorCombination,
-        comments: vehicle.comments[0],
+        comments: vehicle.comments?.[0],
       };
 
       prospect.contact = {
-        firstName: contact.name[0]._,
+        firstName: contact.name?.[0]?._,
         lastName: contact.name[1]._,
-        phone: contact.phone[0],
-        email: contact.email[0],
+        phone: contact.phone?.[0],
+        email: contact.email?.[0],
         address,
-        comments: obj.customer[0].comments[0],
+        comments: obj.customer?.[0]?.comments?.[0],
       };
 
       if (!prospect.contact.email && !prospect.contact.phone) {

@@ -2,132 +2,63 @@
 <?adf version="1.0"?>
 <adf>
 	<prospect status="new">
-		<id sequence="1" source="ClearCar">
-			514742
-		</id>
-		<requestdate>
-			2023-10-26T17:41:42+0000
-		</requestdate>
+		<id sequence="1" source="ClearCar">803096</id>
+		<requestdate>2024-08-23T00:23:24+0000</requestdate>
 		<vehicle interest="sell" status="used">
-			<id>
-				514742
-			</id>
-			<year>
-				2023
-			</year>
-			<make>
-				Jeep
-			</make>
-			<model>
-				Grand Cherokee
-			</model>
-			<vin>
-				1C4RJGBG5PC502857
-			</vin>
-			<trim>
-				Limited
-			</trim>
-			<odometer units="mi">
-				18220
-			</odometer>
-			<price type="offer" currency="USD">
-				33300
-			</price>
+			<id>803096</id>
+			<year>2021</year>
+			<make>Toyota</make>
+			<model>Highlander</model>
+			<vin>5TDBZRBH2MS103722</vin>
+			<trim>LE</trim>
+			<odometer units="mi">49000</odometer>
+			<price type="offer" currency="USD">25750</price>
 			<colorcombination>
-				<exteriorcolor>
-					black
-				</exteriorcolor>
+				<exteriorcolor>red</exteriorcolor>
 			</colorcombination>
-			<comments>
-				<![CDATA[
-				The following is information about the customer's trade-in:  Year: 2023 Make: Jeep Model: Grand Cherokee VIN: 1C4RJGBG5PC502857 Odometer: 18220 VDP link: https://drivably.acvauctions.com/leads/514742 Market Report link: https://app.acvauctions.com/market-report?tab=vin&vin=1C4RJGBG5PC502857&odometer=18220&zip=76227 Vehicle Comments:
-				Accidents: none
-				Condition: great
-				Title Present: No
-				Title Issues: No
-				Frame Damage: No
-				Rust Damage: No
-				Body Damage: No
-				Engine Issues: No
-				Interior Issues: No
-				Mechanical Issues: No
-				Warning Lights: No
-				Modifications: No
-				Tire Issues: No
-				Tire Tread: Good
-				Transmission: Auto
-				History:
-				none
-				
-				Notes:
-				Red: 29304
-				Yellow: 31968
-				Green: 35298
-				]]>
-			</comments>
 		</vehicle>
+    
 		<customer>
 			<contact>
-				<name part="first">
-					Softwire
-				</name>
-				<name part="last">
-					Too
-				</name>
-				<phone>
-					17541109922
-				</phone>
-				<email>
-				</email>
+				<name type="individual" part="first">Rafael</name>
+				<name type="individual" part="last">Hernandez</name>
+				<phone>19717207449</phone>
+				<email>cejarafael649@gmail.com</email>
 				<address type="home">
-					<postalcode>
-						76227
-					</postalcode>
-					<country>
-					</country>
+					<postalcode>98683</postalcode>
+					<country></country>
 				</address>
 			</contact>
-			<comments>
-				<![CDATA[
-				Softwire Too | 33300 | 2023 Jeep Grand Cherokee Limited | 76227 | 17541109922 |  Time: 2023-10-26T17:41:42+0000 |
-				Accidents: none
-				Condition: great
-				Title Present: No
-				Title Issues: No
-				Frame Damage: No
-				Rust Damage: No
-				Body Damage: No
-				Engine Issues: No
-				Interior Issues: No
-				Mechanical Issues: No
-				Warning Lights: No
-				Modifications: No
-				Tire Issues: No
-				Tire Tread: Good
-				Transmission: Auto
-				History:
-				none
-				
-				Notes:
-				Red: 29304
-				Yellow: 31968
-				Green: 35298
-				VehicleDetails: https://drivably.acvauctions.com/leads/514742 SourceLink: https://carsolve.com/instant-quote/ VehicleOfInterest: {} ACV Market Report link: https://app.acvauctions.com/market-report?tab=vin&vin=1C4RJGBG5PC502857&odometer=18220&zip=76227 Carfax link: https://auth.carfax.com/u/login
-				]]>
-			</comments>
+		<comments><![CDATA[ Rafael Hernandez | 25750 | 2021 Toyota Highlander LE | 98683 | 19717207449 |  Time: 2024-08-23T00:23:24+0000 |  VehicleDetails: https://drivably.acvauctions.com/leads/803096 SourceLink: https://carsolve.com/instant-cash-offer/ VehicleOfInterest: {  }  Carfax link: https://auth.carfax.com/u/login The following is information about the customer's trade-in:  Year: 2021 Make: Toyota Model: Highlander VIN: 5TDBZRBH2MS103722 Odometer: 49000 VDP link: https://drivably.acvauctions.com/leads/803096 ACV Market Report link: https://app.acvauctions.com/market-report?tab=vin&vin=5TDBZRBH2MS103722&odometer=49000&zip=98683 Vehicle Comments: 
+ Buying new car (yes/no/not sure): no
+ Optional Equipment: Leather
+ Title Present: Yes
+ Title Issues: No
+ Frame Damage: No
+ Rust Damage: No
+ Body Damage: Yes, Minor
+ Engine Issues: No
+ Interior Issues: No
+ Mechanical Issues: No
+ Warning Lights: No
+ Modifications: No
+ Tire Issues: No
+ Tire Tread: Poor
+ Transmission: Auto
+ Notes:  
+ Red: 22660
+ Yellow: 24720
+ Green: 27295
+]]></comments>
 		</customer>
+		
 		<vendor>
-			<vendorname>
-				CarSolve
-			</vendorname>
+			<vendorname>CarSolve</vendorname>
 		</vendor>
 		<provider>
-			<name part="full">
-				ClearCar
-			</name>
-			<leadtype>
-				Internet
-			</leadtype>
+			<name part="full">ClearCar</name>
+			<leadtype>Campaign</leadtype>
 		</provider>
+		
 	</prospect>
 </adf>
