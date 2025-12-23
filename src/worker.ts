@@ -152,7 +152,7 @@ export default {
       console.log('PROSPECT', prospect);
 
       await fetch(
-        'https://hook.us1.make.com/pe8jvlgmii48ohnox69u28jqlpf0ktk7',
+        'https://hook.us1.make.com/wsgqednk98pv5ac4s54toycr50deu0s0',
         {
           method: 'POST',
           body: JSON.stringify(prospect),
